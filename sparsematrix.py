@@ -8,7 +8,6 @@ from scipy.sparse import csr_matrix
 start_time = timeit.default_timer()
 # create sparse random matrix with specific random numbers
 rvs = stats.norm(loc=3, scale=1).rvs
-.
 S = sparse.random(5, 5, density=0.25, data_rvs=rvs)
 
 sparseMatrix=S.toarray()
